@@ -1,0 +1,57 @@
+﻿@using Obligatorio2Clases;
+@{
+    ViewBag.Title = "MostrarDatos";
+}
+
+<h2>Mostrar Datos</h2>
+<body style="background-image:url(https://trucoslondres.com/wp-content/uploads/2017/05/E.jpg) ">
+    <div style="background-color:#F4D8AC;width:380px;height:50vh;width:20vw ; border-color : black; border:solid">
+        <form method="post" action="~/Filtro/MostrarDatos">
+            <label for="fecha">Seleccione fecha inicio:</label>
+            <input class="requerido" value="FechaI" type="date" id="fechaI" name="FechaI" placeholder="Ingresar la fecha de inicio" />
+            <br />
+            <label for="fecha">Seleccione fecha final:</label>
+            <input class="requerido" value="FechaF" type="date" id="fechaF" name="FechaF" placeholder="Ingresar la fecha final" />
+            
+            <br />
+
+            <input type="submit" value="Buscar" />
+            <br />
+            <span>
+                <label>@ViewBag.Estado</label>
+            </span>
+            <br />
+            <label for="cliente">Datos de los clientes : </label>
+            <select name="cliente">
+                @foreach (Obligatorio2Clases.Cliente c in ViewBag.cliente)
+                {
+
+                    <option value="@c.Documento ">@c.Nombre  @c.Apellido CI: @c.Documento,DIreccion:@c.Direccion,Celular:@c.Telefono</option>
+                }
+            </select>
+        </form>
+        
+        </div>
+    </body>
+
+
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/jquery.validate.min.js"></script>
+        <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+        <script type="text/javascript">
+            function validarVacio() {
+                if ($("#fechaI").val() == "" || $("#fechaF").val() == "") {
+                    alert("La direccion de entrega no puede estar vacía");
+                    return false;
+                }
+
+                if (document.getElementById("fechaI").value == "" || document.getElementById("fechaF").value == "") {
+                    alert("La direccion entrega no puede estar vacía");
+                    return false;
+                }
+            }
+        </script>
+
+

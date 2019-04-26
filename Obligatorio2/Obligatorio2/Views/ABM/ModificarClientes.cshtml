@@ -1,0 +1,45 @@
+﻿@model Obligatorio2Clases.Cliente
+@{
+    ViewBag.Title = "ModificarClientes";
+}
+
+<h2 style="position:center">Modificar Clientes</h2>
+<body style="background-image:url(https://trucoslondres.com/wp-content/uploads/2017/05/E.jpg) ">
+    <div style="background-color:#F4D8AC;width:380px;height:50vh;width:20vw ; border-color : black; border:solid">
+        <p></p>
+        <form method="post" action="~/ABM/ModificarClientes">
+            <label for="cliente">Seleccione un cliente</label>
+            <select name="cliente">
+                <option value="">Seleccione un cliente</option>
+                @foreach (var item in Obligatorio2Clases.Sistema.Instancia.Clientes)
+                {
+                    if (ViewBag.Cliente != null && item.Documento == ViewBag.Cliente)
+                    {
+                        <option id="cliente" value="@item.Documento" name="cliente" selected>@item.Documento</option>
+                    }
+                    else
+                    {
+                        <option id="cliente" value="@item.Documento" name="cliente">@item.Documento</option>
+                    }
+                }
+
+            </select>
+            <br />
+            <label for="Apellido">Apellido nuevo:</label>
+            <input type="text" class="requerido" id="apellidoNuevo" value="@ViewBag.ApelludoNuevo" name="apellido" placeholder="Ingresar su apellido nuevo" />
+            <br />
+            <label for="Direccion">Direccion nueva:</label>
+            <input type="text" class="requerido" id="direccionNueva" value="@ViewBag.DireccionNueva" name="direccion" placeholder="Ingresar la direccion nueva" />
+            <br />
+            <label for="Telefono">Telefono nuevo:</label>
+            <input type="text" class="requerido" id="TelefonoNuevo" value="@ViewBag.TelefonoNuevo" name="telefono" placeholder="Ingresar su nuevo telefono" />
+            <br />
+            <input type="submit" value="Cambiar" />
+            <br />
+        </form>
+
+        <span>
+            <p>@ViewBag.Estado</p>
+        </span>
+        </div>
+    </body>

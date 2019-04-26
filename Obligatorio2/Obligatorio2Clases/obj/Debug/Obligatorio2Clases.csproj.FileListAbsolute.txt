@@ -1,0 +1,10 @@
+C:\Users\salve\Documents\Visual Studio 2015\Projects\Obligatorio2\Obligatorio2Clases\obj\Debug\Obligatorio2Clases.csprojResolveAssemblyReference.cache
+C:\Users\salve\Documents\Visual Studio 2015\Projects\Obligatorio2\Obligatorio2Clases\bin\Debug\Obligatorio2Clases.dll
+C:\Users\salve\Documents\Visual Studio 2015\Projects\Obligatorio2\Obligatorio2Clases\bin\Debug\Obligatorio2Clases.pdb
+C:\Users\salve\Documents\Visual Studio 2015\Projects\Obligatorio2\Obligatorio2Clases\obj\Debug\Obligatorio2Clases.dll
+C:\Users\salve\Documents\Visual Studio 2015\Projects\Obligatorio2\Obligatorio2Clases\obj\Debug\Obligatorio2Clases.pdb
+C:\Users\salve\Desktop\Facutad ORT\Programacion2\Obligatorio2\Obligatorio2\Obligatorio2Clases\bin\Debug\Obligatorio2Clases.dll
+C:\Users\salve\Desktop\Facutad ORT\Programacion2\Obligatorio2\Obligatorio2\Obligatorio2Clases\bin\Debug\Obligatorio2Clases.pdb
+C:\Users\salve\Desktop\Facutad ORT\Programacion2\Obligatorio2\Obligatorio2\Obligatorio2Clases\obj\Debug\Obligatorio2Clases.csprojResolveAssemblyReference.cache
+C:\Users\salve\Desktop\Facutad ORT\Programacion2\Obligatorio2\Obligatorio2\Obligatorio2Clases\obj\Debug\Obligatorio2Clases.dll
+C:\Users\salve\Desktop\Facutad ORT\Programacion2\Obligatorio2\Obligatorio2\Obligatorio2Clases\obj\Debug\Obligatorio2Clases.pdb

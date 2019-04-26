@@ -1,0 +1,34 @@
+﻿@model Obligatorio2Clases.Cliente
+@{
+    ViewBag.Title = "AltaClientes";
+}
+
+<h2>Alta Clientes</h2>
+<body style="background-image:url(https://trucoslondres.com/wp-content/uploads/2017/05/E.jpg) ">
+    <div style="background-color:#F4D8AC;width:380px;height:50vh;width:20vw ; border-color : black; border:solid">
+        <p></p>
+        <form method="post" action="~/ABM/AltaClientes">
+
+            <label for="Nombre">Nombre :</label>
+            <input type="text" class="requerido" id="nombre" value="@ViewBag.nombre" name="nombre" placeholder="Ingresar el nombre" />
+            <br />
+            <label for="Apellido">Apellido :</label>
+            <input type="text" class="requerido" id="apellidoNuevo" value="@ViewBag.apellido" name="apellido" placeholder="Ingresar el apellido " />
+            <br />
+            <label for="Documento">Documento :</label>
+            <input type="text" class="requerido" id="documento" value="@ViewBag.documento" name="documento" placeholder="Ingresar el documento " />
+            <br />
+            <label for="Direccion">Direccion nueva:</label>
+            <input type="text" class="requerido" id="direccion" value="@ViewBag.tireccion" name="direccion" placeholder="Ingresar la direccion " />
+            <br />
+            <label for="Telefono">Telefono :</label>
+            <input type="text" class="requerido" id="Telefono" value="@ViewBag.telefono" name="telefono" placeholder="Ingresar el telefono" />
+            <br />
+            <input type="submit" value="Agregar" />
+        </form>
+
+        <span>
+            <p>@ViewBag.Estado</p>
+        </span>
+        </div>
+    </body>

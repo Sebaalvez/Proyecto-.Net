@@ -1,0 +1,25 @@
+﻿@model Obligatorio2Clases.Vendedor
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+<body style="background-image:url(https://trucoslondres.com/wp-content/uploads/2017/05/E.jpg) ">
+    <div style="background-color:#F4D8AC;width:380px;height:20vh;width:20vw ; border-color : black; border:solid;">
+        <p></p>
+        <form method="post" action="~/Login/VerificarVendedor">
+            <label for="Nombre">Nombre de usuario</label>
+            <input type="text" name="Nombre" value="" />
+            <br />
+            <label for="clave">Clave</label>
+            <input type="password" name="Clave" value="" />
+            <br />
+            <p></p>
+            <input type="submit" value="Ingresar" style="position:center;top:30%;left:40%;"/>
+            <br />
+        </form>
+        <span>
+            <label>@ViewBag.Estado</label>
+        </span>
+    </div>
+</body>
